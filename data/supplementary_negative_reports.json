@@ -1,0 +1,20 @@
+        {
+  "dataset_name": "Supplementary Negative CT Reports",
+  "purpose": "Augment label 0 samples for preprocessing script",
+  "total_samples": 20,
+  "label": 0,
+  "format": {
+    "columns": [
+      "sentence",
+      "label"
+    ],
+    "label_encoding": {
+      "0": "No actionable finding"
+    }
+  },
+  "recommended_usage": [
+    "python scripts/complete_fixed_preprocessing.py \\",
+    "  --input data/raw_ct_reports.csv \\",
+    "  --supplementary-data data/supplementary_negative_reports.csv"
+  ]
+}
