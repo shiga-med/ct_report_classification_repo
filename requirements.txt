@@ -1,0 +1,51 @@
+# Core Deep Learning Frameworks
+torch==2.5.1
+transformers==4.48.0
+accelerate==0.27.0
+datasets==4.0.0
+
+# Model Training & Optimization
+peft==0.11.1
+bitsandbytes==0.47.0
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.4
+scikit-learn==1.4.2
+
+# Imbalanced Learning
+imbalanced-learn==0.14.0
+
+# Statistical Analysis
+scipy==1.11.4
+statsmodels==0.14.5
+
+# Visualization
+matplotlib==3.7.5
+seaborn==0.13.2
+
+# Japanese Text Processing (optional, install separately if needed)
+# pyknp  # For Juman++ tokenizer
+# MeCab-python3  # Alternative tokenizer
+
+# Utilities
+tqdm==4.67.1
+joblib==1.3.2
+
+# Configuration
+PyYAML==6.0.2
+
+# Note: For GPU support, install PyTorch with CUDA:
+# pip install torch==2.5.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+
+# For Japanese tokenization (choose one):
+# Option 1: Juman++ (used in paper)
+#   - Install Juman++: https://github.com/ku-nlp/jumanpp
+#   - pip install pyknp
+#
+# Option 2: MeCab
+#   - Install MeCab: https://taku910.github.io/mecab/
+#   - pip install MeCab-python3
+#
+# Option 3: SudachiPy
+#   - pip install sudachipy sudachidict_core
